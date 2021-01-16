@@ -1,0 +1,19 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - App\Extensions\SiteConfigExtension
+
+# Recaptcha config
+UndefinedOffset\NoCaptcha\Forms\NocaptchaField:
+  site_key: '`RECAPTCHA_SITE_KEY`'
+  secret_key: '`RECAPTCHA_SECRET_KEY`'
+  verify_ssl: false #Allows you to disable php-curl's SSL peer verification by setting this to false (optional, defaults to true)
+  default_theme: 'light' #Default theme color (optional, light or dark, defaults to light)
+  default_type: 'image' #Default captcha type (optional, image or audio, defaults to image)
+  default_size: 'invisible' #Default size (optional, normal, compact or invisible, defaults to normal)
+  default_badge: 'bottomright' #Default badge position (bottomright, bottomleft or inline, defaults to bottomright)

@@ -1,0 +1,8 @@
+---
+Name: mytheme
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - 'site'
+    - '$public'
+    - '$default'

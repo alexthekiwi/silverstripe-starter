@@ -5,3 +5,5 @@
 /_resources/
 /public/_resources/
 /node_modules/
+.idea
+/themes/site/dist/
